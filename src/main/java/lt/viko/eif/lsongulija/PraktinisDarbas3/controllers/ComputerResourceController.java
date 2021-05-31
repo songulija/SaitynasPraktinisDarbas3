@@ -69,6 +69,7 @@ public class ComputerResourceController {
     /**
      * Method to update computer object when making PUT request to
      * "/computers/{id} route. Have to provide computer object and computer id
+     * provide id as path variable
      * @param computer
      * @param id
      * @return ResponseEntity<EntityModel<Computer>> updated computer
@@ -119,12 +120,30 @@ public class ComputerResourceController {
         }else{
             throw new ResponseStatusException(HttpStatus.CONFLICT);
         }
-
     }
 
+    /**
+     * Method to delete computer object from computers list
+     * when making DELETE request to "/computers/{id} route
+     * Have to provide computer id that you want to delete
+     * @param id
+     * @return computers
+     */
+    @DeleteMapping("/{id}")
+    public ResponseEntity<CollectionModel<EntityModel<Computer>>> deleteComputer(@PathVariable int id){
+        /**
+         * Check if computer with provided id exist in
+         * computers list than you can delete it. And return all
+         * computers with our method getAll. Else throw
+         * exeption not found
+         */
+        if(computerRepository.computerIdExist(id)){
+            computerRepository.deleteComputer(id);
+            return getAll();
+        }else{
+            throw new ResponseStatusException(HttpStatus.NOT_FOUND);
+        }
 
-
-
-
+    }
 
 }
