@@ -90,6 +90,38 @@ public class ComputerResourceController {
         return ResponseEntity.ok(model);
     }
 
+    /**
+     * Method to add new computer to computers list when making POST request to
+     * "computers/{id} route. Have to provide computer object
+     * @param computer
+     * @return ResponseEntity<EntityModel<Computer>> computer recourse
+     */
+    @PostMapping()
+    public ResponseEntity<EntityModel<Computer>> postComputer(@RequestBody Computer computer){
+        /**
+         * Setting entity model of Computer object to Entity model.of
+         * provided computer object.
+         */
+        EntityModel<Computer> model = EntityModel.of(computer);
+        /**
+         * uriString is identifier that links to self and to getAll
+         */
+        final String uriString = ServletUriComponentsBuilder.fromCurrentRequest().build().toUriString();
+        model.add(Link.of(uriString, "self"));
+        model.add(linkTo(methodOn(ComputerResourceController.class).getAll()).withRel("get-all"));
+        /**
+         * Check if computer with provided computer id exist or not.
+         * If it doesnt exist then we can add one. Else throw exeption
+         */
+        if(!computerRepository.computerIdExist(computer.getId())){
+            computerRepository.addComputer(computer);
+            return ResponseEntity.ok(model);
+        }else{
+            throw new ResponseStatusException(HttpStatus.CONFLICT);
+        }
+
+    }
+
 
 
 
