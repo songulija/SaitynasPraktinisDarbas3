@@ -66,7 +66,31 @@ public class ComputerResourceController {
         return ResponseEntity.ok(model);
     }
 
-    
+    /**
+     * Method to update computer object when making PUT request to
+     * "/computers/{id} route. Have to provide computer object and computer id
+     * @param computer
+     * @param id
+     * @return ResponseEntity<EntityModel<Computer>> updated computer
+     */
+    @PutMapping("/{id}")
+    public ResponseEntity<EntityModel<Computer>> putComputer(@RequestBody Computer computer, @PathVariable int id){
+        /**
+         * Setting entity model of Computer to computer that is provided
+         */
+        EntityModel<Computer> model = EntityModel.of(computer);
+        /**
+         * uriString is identifier that links to self and to getAll
+         */
+        final String uriString = ServletUriComponentsBuilder.fromCurrentRequest().build().toUriString();
+        model.add(Link.of(uriString, "self"));
+        model.add(linkTo(methodOn(ComputerResourceController.class).getAll()).withRel("get-all"));
+        computerRepository.updateComputer(computer, id);
+
+        return ResponseEntity.ok(model);
+    }
+
+
 
 
 
