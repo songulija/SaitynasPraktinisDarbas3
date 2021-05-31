@@ -74,7 +74,7 @@ public class ComputerResourceController {
      * @param id
      * @return ResponseEntity<EntityModel<Computer>> updated computer
      */
-    @PutMapping("/{id}")
+    @PutMapping(value = "/{id}",consumes = "application/json")
     public ResponseEntity<EntityModel<Computer>> putComputer(@RequestBody Computer computer, @PathVariable int id){
         /**
          * Setting entity model of Computer to computer that is provided
