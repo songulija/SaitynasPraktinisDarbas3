@@ -97,7 +97,7 @@ public class ComputerResourceController {
      * @param computer
      * @return ResponseEntity<EntityModel<Computer>> computer recourse
      */
-    @PostMapping()
+    @PostMapping(consumes = "application/json")
     public ResponseEntity<EntityModel<Computer>> postComputer(@RequestBody Computer computer){
         /**
          * Setting entity model of Computer object to Entity model.of
@@ -143,7 +143,6 @@ public class ComputerResourceController {
         }else{
             throw new ResponseStatusException(HttpStatus.NOT_FOUND);
         }
-
     }
 
 }
