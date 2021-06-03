@@ -5,7 +5,10 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
-
+/**
+ * Test for Motherboard class
+ * @author lukas
+ */
 class MotherboardTest {
 
     @BeforeEach
@@ -16,6 +19,9 @@ class MotherboardTest {
     void tearDown() {
     }
 
+    /**
+     * Test of getBrand method, of class Motherboard
+     */
     @Test
     void getBrand() {
         System.out.println("getBrand");
@@ -26,9 +32,11 @@ class MotherboardTest {
 
         String result = instance.getBrand();
         assertEquals(expResult, result);
-
     }
 
+    /**
+     * Test of setBrand method, of class Motherboard
+     */
     @Test
     void setBrand() {
         System.out.println("setBrand");
@@ -43,6 +51,9 @@ class MotherboardTest {
 
     }
 
+    /**
+     * Test of getCompatibleCpuBrand method, of class Motherboard
+     */
     @Test
     void getCompatibleCpuBrand() {
         System.out.println("getCompatibleCpuBrand");
@@ -52,9 +63,11 @@ class MotherboardTest {
         String expResult = "Intel";
         String result = instance.getCompatibleCpuBrand();
         assertEquals(expResult, result);
-
     }
 
+    /**
+     * Test of setCompatibleCpuBrand method, of class Motherboard
+     */
     @Test
     void setCompatibleCpuBrand() {
         System.out.println("setCompatibleCpuBrand");
@@ -67,6 +80,9 @@ class MotherboardTest {
         assertEquals(expResult, result);
     }
 
+    /**
+     * Test of getRamType method, of class Motherboard
+     */
     @Test
     void getRamType() {
         System.out.println("getRamType");
@@ -76,9 +92,11 @@ class MotherboardTest {
         String expResult = "DD4";
         String result = instance.getRamType();
         assertEquals(expResult, result);
-
     }
 
+    /**
+     * Test of setRamType method, of class Motherboard
+     */
     @Test
     void setRamType() {
         System.out.println("setRamType");
@@ -91,6 +109,9 @@ class MotherboardTest {
         assertEquals(expResult, result);
     }
 
+    /**
+     * Test of getMaxRams method, of class Motherboard
+     */
     @Test
     void getMaxRams() {
         System.out.println("getMaxRams");
@@ -102,6 +123,9 @@ class MotherboardTest {
         assertEquals(expResult, result);
     }
 
+    /**
+     * Test of setMaxRams method, of class Motherboard
+     */
     @Test
     void setMaxRams() {
         System.out.println("setMaxRams");
@@ -114,6 +138,9 @@ class MotherboardTest {
         assertEquals(expResult, result);
     }
 
+    /**
+     * Test of getMemorySlotsNumer method, of class Motherboard
+     */
     @Test
     void getMemorySlotsNumer() {
         System.out.println("getMemorySlotsNumer");
@@ -123,9 +150,11 @@ class MotherboardTest {
         int expResult = 4;
         int result = instance.getMemorySlotsNumer();
         assertEquals(expResult, result);
-
     }
 
+    /**
+     * Test of setMemorySlotsNumer method, of class Motherboard
+     */
     @Test
     void setMemorySlotsNumer() {
         System.out.println("setMemorySlotsNumer");
@@ -138,6 +167,9 @@ class MotherboardTest {
         assertEquals(expResult, result);
     }
 
+    /**
+     * Test of testToString method, of class Motherboard
+     */
     @Test
     void testToString() {
         System.out.println("toString");

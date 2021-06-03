@@ -5,8 +5,6 @@
  */
 package lt.viko.eif.lsongulija.PraktinisDarbas3.model;
 
-
-
 /**
  * Represents Storage object which has storageType, capacity, connectionType properties
  * This class is responsible for getting, setting and printing properties

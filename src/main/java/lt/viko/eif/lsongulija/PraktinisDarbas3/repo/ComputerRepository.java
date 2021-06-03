@@ -5,12 +5,11 @@ import lt.viko.eif.lsongulija.PraktinisDarbas3.model.*;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.stream.Collectors;
 
 /**
  * Represents repository object of computers.
  * Has attribute computers, which is a list of computers.
- *
+ * Methods get,updateComputer,addComputer,deleteComputer,computerIdExist
  * @author lukas
  * @version 1.0
  */
@@ -20,6 +19,7 @@ public class ComputerRepository {
      */
     private static List<Computer> computers = new ArrayList<>();
     {
+
         computers.add(new Computer("Dell Insipirion 2500", "DELL", 1,
                 1493, "MSI", 1379, "MSI GTX 1060 TI","6 GB GDDR5",
                 "ASUS","Intel",32,4, "DD4",

@@ -5,7 +5,6 @@
  */
 package lt.viko.eif.lsongulija.PraktinisDarbas3.model;
 
-
 /**
  * Represents Processor object which has name, cores, threads,baseFrequency,maxFrequency properties
  * This class is responsible for getting, setting and printing properties

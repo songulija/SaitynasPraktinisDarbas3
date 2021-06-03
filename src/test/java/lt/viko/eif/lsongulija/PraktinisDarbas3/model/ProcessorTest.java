@@ -5,7 +5,10 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
-
+/**
+ * Test for Processor class
+ * @author lukas
+ */
 class ProcessorTest {
 
     @BeforeEach
@@ -16,6 +19,9 @@ class ProcessorTest {
     public static void tearDown() {
     }
 
+    /**
+     * Test of getName method, of class Processor
+     */
     @Test
     void getName() {
         System.out.println("getName");
@@ -25,9 +31,11 @@ class ProcessorTest {
         String expResult = "INTEL 99";;
         String result = instance.getName();
         assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
     }
 
+    /**
+     * Test of setName method, of class Processor
+     */
     @Test
     void setName() {
         System.out.println("setName");
@@ -35,11 +43,14 @@ class ProcessorTest {
         Processor instance = new Processor();
         instance.setName(name);
         String expResult = "INTEL 99";
-        // TODO review the generated test code and remove the default call to fail.
+
         String result = instance.getName();
         assertEquals(expResult, result);
     }
 
+    /**
+     * Test of getCores method, of class Processor
+     */
     @Test
     void getCores() {
         System.out.println("getCores");
@@ -49,22 +60,25 @@ class ProcessorTest {
         int expResult = 8;
         int result = instance.getCores();
         assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
     }
 
+    /**
+     * Test of setCores method, of class Processor
+     */
     @Test
     void setCores() {
         System.out.println("setCores");
         int cores = 8;
         Processor instance = new Processor();
         instance.setCores(cores);
-        // TODO review the generated test code and remove the default call to fail.
         int expResult = 8;
-        // TODO review the generated test code and remove the default call to fail.
         int result = instance.getCores();
         assertEquals(expResult, result);
     }
 
+    /**
+     * Test of getThreads method, of class Processor
+     */
     @Test
     void getThreads() {
         System.out.println("getThreads");
@@ -75,23 +89,26 @@ class ProcessorTest {
         int expResult = 16;
         int result = instance.getThreads();
         assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
     }
 
+    /**
+     * Test of setThreads method, of class Processor
+     */
     @Test
     void setThreads() {
         System.out.println("setThreads");
         Processor instance = new Processor();
         int threads = 16;
         instance.setThreads(threads);
-        // TODO review the generated test code and remove the default call to fail.
         int expResult = 16;
-        // TODO review the generated test code and remove the default call to fail.
         int result = instance.getThreads();
         assertEquals(expResult, result);
 
     }
 
+    /**
+     * Test of getBaseFrequency method, of class Processor
+     */
     @Test
     void getBaseFrequency() {
         System.out.println("getBaseFrequency");
@@ -104,6 +121,9 @@ class ProcessorTest {
         assertEquals(expResult, result, 2.5);
     }
 
+    /**
+     * Test of setBaseFrequency method, of class Processor
+     */
     @Test
     void setBaseFrequency() {
         System.out.println("setBaseFrequency");
@@ -111,13 +131,14 @@ class ProcessorTest {
         Processor instance = new Processor();
 
         instance.setBaseFrequency(baseFrequency);
-        // TODO review the generated test code and remove the default call to fail.
         double expResult = 4.5;
-        // TODO review the generated test code and remove the default call to fail.
         double result = instance.getBaseFrequency();
         assertEquals(expResult, result, 4.5);
     }
 
+    /**
+     * Test of setBaseFrequency method, of class Processor
+     */
     @Test
     void getMaxFrequency() {
         System.out.println("getMaxFrequency");
@@ -130,6 +151,9 @@ class ProcessorTest {
         assertEquals(expResult, result, 4.5);
     }
 
+    /**
+     * Test of setMaxFrequency method, of class Processor
+     */
     @Test
     void setMaxFrequency() {
         System.out.println("setMaxFrequency");
@@ -137,13 +161,14 @@ class ProcessorTest {
         Processor instance = new Processor();
 
         instance.setMaxFrequency(maxFrequency);
-        // TODO review the generated test code and remove the default call to fail.
         double expResult = 4.5;
-        // TODO review the generated test code and remove the default call to fail.
         double result = instance.getMaxFrequency();
         assertEquals(expResult, result, 4.5);
     }
 
+    /**
+     * Test of testToString method, of class Processor
+     */
     @Test
     void testToString() {
         System.out.println("toString");
@@ -151,6 +176,5 @@ class ProcessorTest {
         String expResult = instance.toString();
         String result = instance.toString();
         assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
     }
 }

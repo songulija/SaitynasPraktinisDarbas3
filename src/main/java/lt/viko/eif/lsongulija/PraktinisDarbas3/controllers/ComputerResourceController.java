@@ -21,7 +21,7 @@ import static org.springframework.hateoas.server.mvc.WebMvcLinkBuilder.methodOn;
 
 /**
  * Computers API controller
- * @author Lukas Songulija
+ * @author lukas
  * version 1.0
  */
 @RestController

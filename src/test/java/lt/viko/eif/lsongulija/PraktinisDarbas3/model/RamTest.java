@@ -5,7 +5,10 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
-
+/**
+ * Test for Ram class
+ * @author lukas
+ */
 class RamTest {
 
     @BeforeEach
@@ -16,6 +19,9 @@ class RamTest {
     void tearDown() {
     }
 
+    /**
+     * Test of getCapacity method, of class Ram
+     */
     @Test
     void getCapacity() {
         System.out.println("getCapacity");
@@ -28,6 +34,9 @@ class RamTest {
         assertEquals(expResult, result);
     }
 
+    /**
+     * Test of setCapacity method, of class Ram
+     */
     @Test
     void setCapacity() {
         System.out.println("setCapacity");
@@ -35,13 +44,14 @@ class RamTest {
         Ram instance = new Ram();
 
         instance.setCapacity(capacity);
-        // TODO review the generated test code and remove the default call to fail.
         int expResult = 16;
-        // TODO review the generated test code and remove the default call to fail.
         int result = instance.getCapacity();
         assertEquals(expResult, result);
     }
 
+    /**
+     * Test of getMemoryVoltage method, of class Ram
+     */
     @Test
     void getMemoryVoltage() {
         System.out.println("getMemoryVoltage");
@@ -54,6 +64,9 @@ class RamTest {
         assertEquals(expResult, result, 1.35);
     }
 
+    /**
+     * Test of setMemoryVoltage method, of class Ram
+     */
     @Test
     void setMemoryVoltage() {
         System.out.println("setMemoryVoltage");
@@ -61,13 +74,14 @@ class RamTest {
         Ram instance = new Ram();
 
         instance.setMemoryVoltage(memoryVoltage);
-        // TODO review the generated test code and remove the default call to fail.
         double expResult = 1.35;
-        // TODO review the generated test code and remove the default call to fail.
         double result = instance.getMemoryVoltage();
         assertEquals(expResult, result, 1.35);
     }
 
+    /**
+     * Test of getTacticalFrequency method, of class Ram
+     */
     @Test
     void getTacticalFrequency() {
         System.out.println("getTacticalFrequency");
@@ -80,6 +94,9 @@ class RamTest {
         assertEquals(expResult, result);
     }
 
+    /**
+     * Test of setTacticalFrequency method, of class Ram
+     */
     @Test
     void setTacticalFrequency() {
         System.out.println("setTacticalFrequency");
@@ -87,13 +104,14 @@ class RamTest {
         Ram instance = new Ram();
 
         instance.setTacticalFrequency(tacticalFrequency);
-        // TODO review the generated test code and remove the default call to fail.
         int expResult = 3200;
-        // TODO review the generated test code and remove the default call to fail.
         int result = instance.getTacticalFrequency();
         assertEquals(expResult, result);
     }
 
+    /**
+     * Test of testToString method, of class Ram
+     */
     @Test
     void testToString() {
         System.out.println("toString");
@@ -101,6 +119,5 @@ class RamTest {
         String expResult = instance.toString();
         String result = instance.toString();
         assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
     }
 }

@@ -5,7 +5,10 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
-
+/**
+ * Test for PowerSuply class
+ * @author lukas
+ */
 class PowerSupplyTest {
 
     @BeforeEach
@@ -16,6 +19,9 @@ class PowerSupplyTest {
     void tearDown() {
     }
 
+    /**
+     * Test of getProducer method, of class PowerSupply
+     */
     @Test
     void getProducer() {
         System.out.println("getProducer");
@@ -27,6 +33,9 @@ class PowerSupplyTest {
         assertEquals(expResult, result);
     }
 
+    /**
+     * Test of setProducer method, of class PowerSupply
+     */
     @Test
     void setProducer() {
         System.out.println("setProducer");
@@ -39,6 +48,9 @@ class PowerSupplyTest {
         assertEquals(expResult, result);
     }
 
+    /**
+     * Test of getPowerWats method, of class PowerSupply
+     */
     @Test
     void getPowerWats() {
         System.out.println("getPowerWats");
@@ -51,6 +63,9 @@ class PowerSupplyTest {
 
     }
 
+    /**
+     * Test of setPowerWats method, of class PowerSupply
+     */
     @Test
     void setPowerWats() {
         System.out.println("setPowerWats");
@@ -64,6 +79,9 @@ class PowerSupplyTest {
 
     }
 
+    /**
+     * Test of getInputVoltage method, of class PowerSupply
+     */
     @Test
     void getInputVoltage() {
         System.out.println("getInputVoltage");
@@ -75,6 +93,9 @@ class PowerSupplyTest {
         assertEquals(expResult, result);
     }
 
+    /**
+     * Test of setInputVoltage method, of class PowerSupply
+     */
     @Test
     void setInputVoltage() {
         System.out.println("setInputVoltage");
@@ -88,6 +109,9 @@ class PowerSupplyTest {
 
     }
 
+    /**
+     * Test of getOperatingTemperature method, of class PowerSupply
+     */
     @Test
     void getOperatingTemperature() {
         System.out.println("getOperatingTemperature");
@@ -97,9 +121,11 @@ class PowerSupplyTest {
         String expResult = "0 - 40 °C";
         String result = instance.getOperatingTemperature();
         assertEquals(expResult, result);
-
     }
 
+    /**
+     * Test of setOperatingTemperature method, of class PowerSupply
+     */
     @Test
     void setOperatingTemperature() {
         System.out.println("setOperatingTemperature");
@@ -112,6 +138,9 @@ class PowerSupplyTest {
         assertEquals(expResult, result);
     }
 
+    /**
+     * Test of testToString method, of class PowerSupply
+     */
     @Test
     void testToString() {
         System.out.println("toString");

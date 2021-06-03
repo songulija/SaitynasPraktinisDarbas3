@@ -5,7 +5,10 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
-
+/**
+ * Test for Storage class
+ * @author lukas
+ */
 class StorageTest {
 
     @BeforeEach
@@ -18,6 +21,9 @@ class StorageTest {
 
     }
 
+    /**
+     * Test of getStorageType method, of class Storage
+     */
     @Test
     void getStorageType() {
         System.out.println("getStorageType");
@@ -27,9 +33,11 @@ class StorageTest {
         String expResult = "HDD";
         String result = instance.getStorageType();
         assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
     }
 
+    /**
+     * Test of setStorageType method, of class Storage
+     */
     @Test
     void setStorageType() {
         System.out.println("setStorageType");
@@ -44,6 +52,9 @@ class StorageTest {
 
     }
 
+    /**
+     * Test of getCapacity method, of class Storage
+     */
     @Test
     void getCapacity() {
         System.out.println("getCapacity");
@@ -53,10 +64,12 @@ class StorageTest {
         int expResult = 800;
         int result = instance.getCapacity();
         assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
 
     }
 
+    /**
+     * Test of setCapacity method, of class Storage
+     */
     @Test
     void setCapacity() {
         System.out.println("setCapacity");
@@ -65,13 +78,13 @@ class StorageTest {
         instance.setCapacity(capacity);
 
         int expResult = 700;
-        // TODO review the generated test code and remove the default call to fail.
         int result = instance.getCapacity();
         assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-
     }
 
+    /**
+     * Test of getConnectionType method, of class Storage
+     */
     @Test
     void getConnectionType() {
         System.out.println("getConnectionType");
@@ -81,10 +94,12 @@ class StorageTest {
         String expResult = "SATA III";
         String result = instance.getConnectionType();
         assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
 
     }
 
+    /**
+     * Test of setConnectionType method, of class Storage
+     */
     @Test
     void setConnectionType() {
         System.out.println("setConnectionType");
@@ -95,10 +110,11 @@ class StorageTest {
         String expResult = "SATA III";
         String result = instance.getConnectionType();
         assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-
     }
 
+    /**
+     * Test of testToString method, of class Storage
+     */
     @Test
     void testToString() {
         System.out.println("toString");
@@ -106,6 +122,5 @@ class StorageTest {
         String expResult = instance.toString();
         String result = instance.toString();
         assertEquals(expResult, result);
-
     }
 }

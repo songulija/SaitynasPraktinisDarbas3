@@ -5,7 +5,6 @@
  */
 package lt.viko.eif.lsongulija.PraktinisDarbas3.model;
 
-
 /**
  * Represents Ram object which has capacity, memoryVoltage,tacticalFrequency properties
  * This class is responsible for getting, setting and printing properties

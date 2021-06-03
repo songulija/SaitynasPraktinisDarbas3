@@ -5,7 +5,10 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
-
+/**
+ * Test for GraphicCard class
+ * @author lukas
+ */
 class GraphicCardTest {
 
     @BeforeEach
@@ -15,7 +18,9 @@ class GraphicCardTest {
     @AfterEach
     void tearDown() {
     }
-
+    /**
+     * Test of getBrand method, of class GraphichCard
+     */
     @Test
     void getBrand() {
         System.out.println("getBrand");
@@ -26,7 +31,9 @@ class GraphicCardTest {
         String result = instance.getBrand();
         assertEquals(expResult, result);
     }
-
+    /**
+     * Test of setBrand method, of class GraphichCard
+     */
     @Test
     void setBrand() {
         System.out.println("setBrand");
@@ -38,7 +45,9 @@ class GraphicCardTest {
         String result = instance.getBrand();
         assertEquals(expResult, result);
     }
-
+    /**
+     * Test of getDescription method, of class GraphichCard
+     */
     @Test
     void getDescription() {
         System.out.println("getDescription");
@@ -50,7 +59,9 @@ class GraphicCardTest {
         String result = instance.getDescription();
         assertEquals(expResult, result);
     }
-
+    /**
+     * Test of getDescription method, of class GraphichCard
+     */
     @Test
     void setDescription() {
         System.out.println("setDescription");
@@ -62,7 +73,9 @@ class GraphicCardTest {
         String result = instance.getDescription();
         assertEquals(expResult, result);
     }
-
+    /**
+     * Test of getMemory method, of class GraphichCard
+     */
     @Test
     void getMemory() {
         System.out.println("getMemory");
@@ -73,7 +86,9 @@ class GraphicCardTest {
         String result = instance.getMemory();
         assertEquals(expResult, result);
     }
-
+    /**
+     * Test of setMemory method, of class GraphichCard
+     */
     @Test
     void setMemory() {
         System.out.println("setMemory");
@@ -85,7 +100,9 @@ class GraphicCardTest {
         String result = instance.getMemory();
         assertEquals(expResult, result);
     }
-
+    /**
+     * Test of getCoreClock method, of class GraphichCard
+     */
     @Test
     void getCoreClock() {
         System.out.println("getCoreClock");
@@ -96,7 +113,9 @@ class GraphicCardTest {
         int result = instance.getCoreClock();
         assertEquals(expResult, result);
     }
-
+    /**
+     * Test of setCoreClock method, of class GraphichCard
+     */
     @Test
     void setCoreClock() {
         System.out.println("setCoreClock");
@@ -108,7 +127,9 @@ class GraphicCardTest {
         int result = instance.getCoreClock();
         assertEquals(expResult, result);
     }
-
+    /**
+     * Test of getBoostClock method, of class GraphichCard
+     */
     @Test
     void getBoostClock() {
         System.out.println("getBoostClock");
@@ -118,9 +139,10 @@ class GraphicCardTest {
         int expResult = 1493;
         int result = instance.getBoostClock();
         assertEquals(expResult, result);
-
     }
-
+    /**
+     * Test of setBoostClock method, of class GraphichCard
+     */
     @Test
     void setBoostClock() {
         System.out.println("setBoostClock");
@@ -132,7 +154,9 @@ class GraphicCardTest {
         int result = instance.getBoostClock();
         assertEquals(expResult, result);
     }
-
+    /**
+     * Test of testToString method, of class GraphichCard
+     */
     @Test
     void testToString() {
         System.out.println("toString");
@@ -140,6 +164,5 @@ class GraphicCardTest {
         String expResult = instance.toString();
         String result = instance.toString();
         assertEquals(expResult, result);
-
     }
 }
