@@ -16,6 +16,7 @@ public class Ram {
     private int capacity;
     private double memoryVoltage;
     private int tacticalFrequency;
+
     /**
      * Getter for capacity field
      * @return capacity

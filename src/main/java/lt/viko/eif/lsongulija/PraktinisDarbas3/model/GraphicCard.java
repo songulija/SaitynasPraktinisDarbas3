@@ -96,6 +96,5 @@ public class GraphicCard {
         String result = String.format("GraphicCard \n \t\t\t\t\t\t Brand \t %s \n \t\t\t\t\t\t Description \t %s \n \t\t\t\t\t\t Memory \t %s \n \t\t\t\t\t\t CoreClock \t %s \n \t\t\t\t\t\t BoostClock \t %s",brand, description,memory, coreClock, boostClock);
         return result;
     }
-    
-    
+
 }

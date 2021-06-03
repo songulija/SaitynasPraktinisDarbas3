@@ -82,6 +82,5 @@ public class PowerSupply {
         String result = String.format("Power Supply \n \t\t\t\t\t\t Producer \t %s \n \t\t\t\t\t\t PowerWats \t %d \n \t\t\t\t\t\t InputVoltage \t %s, \n \t\t\t\t\t\t OperatingTemperature \t %s",producer, powerWats,inputVoltage,operatingTemperature);
         return result;
     }
-    
-    
+
 }

@@ -18,6 +18,8 @@ public class Storage {
     private int capacity;
     private String connectionType;
 
+
+
     /**
      * Getter for storageType field
      * @return storageType
